@@ -20,9 +20,11 @@ const App = () => {
     // Logic to evaluate the expression
     console.log("Equal");
     try {
+      setInput(eval(input).toString());
       setResult(eval(input));
     } catch (error) {
-      setInput("Error");
+      // setInput("Error");
+      setResult("Error")
     } 
   }
   return (
